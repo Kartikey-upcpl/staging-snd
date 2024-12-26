@@ -1,0 +1,518 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+/* price product */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  word-wrap: normal !important;
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  overflow-wrap: normal !important;
+  padding: 0;
+  position: absolute !important;
+  width: 1px
+}
+
+.screen-reader-text:focus {
+  clip: auto !important;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+  clip-path: none;
+  color: #2b2d2f;
+  display: block;
+  font-size: .875rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000
+}
+
+.current-price, .total_price_label {
+  font-weight: bold;
+}
+
+.current-price ins {
+  background: #ffd;
+  color: #666;
+  text-decoration: none;
+}
+
+.current-price ins .woocommerce-Price-amount, .price ins .woocommerce-Price-amount {
+  color: #409503 !important;
+}
+
+.current-price span.amount {
+  color: #111;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+ins{
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.current-price del span.amount {
+  margin-right: .3em;
+  opacity: .6;
+}
+
+.current-price .woocommerce-Price-currencySymbol,  del .woocommerce-Price-amount .woocommerce-Price-currencySymbol {
+  display: inline-block;
+  font-size: .75em;
+  color: #e60e0e;
+  vertical-align: top;
+}
+
+.current-price .woocommerce-Price-currencySymbol,  ins .woocommerce-Price-amount .woocommerce-Price-currencySymbol {
+  display: inline-block;
+  font-size: .75em;
+  color: #409503; 
+  vertical-align: top;
+}
+
+.current-price del .woocommerce-Price-amount, .current-price del .woocommerce-Price-amount, del .woocommerce-Price-amount  {
+  color: #ff0000 !important;
+  font-weight: 600 !important;
+}
+
+.product-single-description {
+  line-height: 1.6;
+}
+
+.product-single-description h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.product-single-description h1 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.product-single-description h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.product-single-description h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.product-single-description h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.product-single-description h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.product-single-description h6 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.product-single-description h2,
+.product-single-description h3 {
+  text-align: left !important;
+}
+
+.product-single-description p {
+  margin-bottom: 18px;
+}
+
+.product-single-description ul {
+  list-style: disc;
+  margin-bottom: 1.3em;
+}
+
+.product-single-description ol {
+  list-style-type: decimal;
+  margin-bottom: 1.3em;
+}
+
+.product-single-description ul li,
+.product-single-description ol li {
+  margin-left: 1.3em;
+  margin-bottom: .6em;
+}
+
+.product-single-description em {
+  color: #f0506e;
+}
+
+/* select input */
+input.hide_spin_button::-webkit-outer-spin-button,
+input.hide_spin_button::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Autocomplate style */
+.aa-Panel {
+  z-index: 1000;
+}
+
+
+/* Offer product */
+
+.offer-content h2 {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.offer-content ul,
+.offer-content ol {
+  margin-top: 8px;
+}
+
+.offer-content li {
+  margin-left: 26px;
+}
+
+/* deal price product */
+
+.product-summary span.amount {
+  color: #111;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.product-summary .woocommerce-Price-currencySymbol {
+  display: inline-block;
+  font-size: .75em;
+  vertical-align: top;
+}
+
+.woodescolsm220 {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5px 0;
+}
+
+.woodescolsm221 {
+  flex: 1;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  margin: 5px;
+  padding: 20px;
+
+}
+
+@media screen and (max-width: 980px) {
+  .woodescolsm221 {
+    padding: 0px
+  }
+
+  .woodescolsm220 .woodescolsm221 {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .woodescolsm220 .woodescolsm221 {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+
+.snd_iframe_container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 52.5%;
+  /* Adjust this value to maintain aspect ratio (height/width) */
+}
+
+.snd_iframe_container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wpclv-attribute-label {
+  background: linear-gradient(140deg, rgba(218, 63, 106, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 40%);
+  color: white;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+
+
+.flash-sale {
+  position: relative;
+  width: max-content;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: #f1f5f9;
+  border-radius: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+
+.anime-border {
+  position: absolute;
+}
+
+.top-border {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, rgb(255, 90, 135), #d5d5d5);
+  animation: animateBordersTop 2s linear infinite;
+}
+
+.right-border {
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to left, rgb(255, 90, 135), #d5d5d5);
+  animation: animateBordersRight 2s linear infinite;
+}
+
+.bottom-border {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, rgb(255, 90, 135), #d5d5d5);
+  animation: animateBordersBottom 2s linear infinite;
+}
+
+.left-border {
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to left, rgb(255, 90, 135), #d5d5d5);
+  animation: animateBordersLeft 2s linear infinite;
+}
+
+.flash-text {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: #000;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.timer-block {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Keyframes for Animations */
+@keyframes animateBordersTop {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animateBordersRight {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes animateBordersBottom {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes animateBordersLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.otp_modal {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%; /* Default width for smaller screens */
+  max-width: 400px; /* Restrict max width for larger screens */
+  height: fit-content;
+  position: relative;
+  z-index: 1000;
+  margin: 0 auto; /* Center the modal */
+}
+
+
+@media (min-width: 768px) {
+  .otp_modal {
+    padding: 24px;
+    width: 400px;
+  }
+}
+
+.otp_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.otp_input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.otp_button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.otp_btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.container-fit {
+  width: 100%; /* Full width for mobile */
+  max-width: 100%; /* Default for small screens */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 16px; /* Add some padding for smaller screens */
+}
+
+@media (min-width: 768px) { /* Desktop breakpoint */
+  .container-fit {
+    max-width: 1080px; /* Restrict max width on desktop */
+  }
+}
+
+.container {
+  max-width: 1080px !important;
+}
+
+.floating-bar {
+  position: fixed; /* Fix the bar to the bottom of the screen */
+  bottom: 4rem; /* Align the bar to the bottom */
+  left: 0; /* Start from the left edge */
+  right: 0; /* End at the right edge */
+  z-index: 1050; /* Ensure it stays above other content */
+  background-color: #fff; /* Add a background color */
+  padding: 1rem; /* Add some padding for spacing */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  border-top: 1px solid #ddd; /* Add a border at the top for separation */
+}
+
+@media (min-width: 992px) {
+  .floating-bar {
+      display: none; /* Hide the floating bar on large screens */
+  }
+}

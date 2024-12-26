@@ -1,0 +1,1 @@
+rsync -Pavp --exclude={'.idea','.git/*','.git','.next/*'} --exclude=node_modules . sndreact@98.70.74.57:/opt/stacks/nextapp

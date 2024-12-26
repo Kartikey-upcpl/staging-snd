@@ -1,0 +1,193 @@
+{
+  "items": [
+    {
+      "key": "e830920bdc6781a0b65a507445dea555",
+      "id": 230402,
+      "type": "simple",
+      "quantity": 2,
+      "quantity_limits": {
+        "minimum": 1,
+        "maximum": 9999,
+        "multiple_of": 1,
+        "editable": true
+      },
+      "name": "StarAndDaisy\u00a0Multifunctional Mini Suitcase for Mother and Baby &#8211; Travel-Friendly Small Luggage Bag with Security Lock(Pink)",
+      "short_description": "",
+      "description": "description...",
+      "sku": "baby_suitcase_bag_Pink",
+      "low_stock_remaining": null,
+      "backorders_allowed": false,
+      "show_backorder_badge": false,
+      "sold_individually": false,
+      "permalink": "https://staranddaisy.in/product/staranddaisy-multifunctional-mini-suitcase-for-mother-and-baby-travel-friendly-small-luggage-bag-with-security-lockpink/",
+      "images": [
+        {
+          "id": 230403,
+          "src": "https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink.jpg",
+          "thumbnail": "https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-247x247.jpg",
+          "srcset": "https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink.jpg 1000w, https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-280x280.jpg 280w, https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-400x400.jpg 400w, https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-768x768.jpg 768w, https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-800x800.jpg 800w, https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-70x70.jpg 70w, https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-247x247.jpg 247w, https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-510x510.jpg 510w, https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-100x100.jpg 100w, https://staranddaisy.in/wp-content/uploads/2023/11/Baby-Suitcase-Bag-pink-32x32.jpg 32w",
+          "sizes": "(max-width: 1000px) 100vw, 1000px",
+          "name": "Multifunctional Mini Suitcase for Mother and Baby &#8211; StarAndDaisy",
+          "alt": "Multifunctional Mini Suitcase for Mother and Baby"
+        }
+      ],
+      "variation": [],
+      "item_data": [
+        {
+          "key": "Deal Price",
+          "value": "&#8377;999.00 Lowest Price",
+          "display": ""
+        }
+      ],
+      "prices": {
+        "price": "99900",
+        "regular_price": "175900",
+        "sale_price": "99900",
+        "price_range": null,
+        "currency_code": "INR",
+        "currency_symbol": "\u20b9",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ".",
+        "currency_thousand_separator": ",",
+        "currency_prefix": "\u20b9",
+        "currency_suffix": "",
+        "raw_prices": {
+          "precision": 6,
+          "price": "999000000",
+          "regular_price": "1759000000",
+          "sale_price": "999000000"
+        }
+      },
+      "totals": {
+        "line_subtotal": "169322",
+        "line_subtotal_tax": "30478",
+        "line_total": "169322",
+        "line_total_tax": "30478",
+        "currency_code": "INR",
+        "currency_symbol": "\u20b9",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ".",
+        "currency_thousand_separator": ",",
+        "currency_prefix": "\u20b9",
+        "currency_suffix": ""
+      },
+      "catalog_visibility": "visible",
+      "extensions": {}
+    }
+  ],
+  "coupons": [],
+  "fees": [],
+  "totals": {
+    "total_items": "169322",
+    "total_items_tax": "30478",
+    "total_fees": "0",
+    "total_fees_tax": "0",
+    "total_discount": "0",
+    "total_discount_tax": "0",
+    "total_shipping": "0",
+    "total_shipping_tax": "0",
+    "total_price": "199800",
+    "total_tax": "30478",
+    "tax_lines": [
+      {
+        "name": "CGST",
+        "price": "15239",
+        "rate": "9%"
+      },
+      {
+        "name": "SGST",
+        "price": "15239",
+        "rate": "9%"
+      }
+    ],
+    "currency_code": "INR",
+    "currency_symbol": "\u20b9",
+    "currency_minor_unit": 2,
+    "currency_decimal_separator": ".",
+    "currency_thousand_separator": ",",
+    "currency_prefix": "\u20b9",
+    "currency_suffix": ""
+  },
+  "shipping_address": {
+    "first_name": "",
+    "last_name": "",
+    "company": "",
+    "address_1": "",
+    "address_2": "",
+    "city": "",
+    "state": "UP",
+    "postcode": "",
+    "country": "IN",
+    "phone": ""
+  },
+  "billing_address": {
+    "first_name": "",
+    "last_name": "",
+    "company": "",
+    "address_1": "",
+    "address_2": "",
+    "city": "",
+    "state": "UP",
+    "postcode": "",
+    "country": "IN",
+    "email": "",
+    "phone": ""
+  },
+  "needs_payment": true,
+  "needs_shipping": true,
+  "payment_requirements": ["products"],
+  "has_calculated_shipping": true,
+  "shipping_rates": [
+    {
+      "package_id": 0,
+      "name": "Shipment 1",
+      "destination": {
+        "address_1": "",
+        "address_2": "",
+        "city": "",
+        "state": "UP",
+        "postcode": "",
+        "country": "IN"
+      },
+      "items": [
+        {
+          "key": "e830920bdc6781a0b65a507445dea555",
+          "name": "StarAndDaisy\u00a0Multifunctional Mini Suitcase for Mother and Baby - Travel-Friendly Small Luggage Bag with Security Lock(Pink)",
+          "quantity": 2
+        }
+      ],
+      "shipping_rates": [
+        {
+          "rate_id": "free_shipping:10",
+          "name": "Free shipping",
+          "description": "",
+          "delivery_time": "",
+          "price": "0",
+          "taxes": "0",
+          "instance_id": 10,
+          "method_id": "free_shipping",
+          "meta_data": [
+            {
+              "key": "Items",
+              "value": "StarAndDaisy\u00a0Multifunctional Mini Suitcase for Mother and Baby - Travel-Friendly Small Luggage Bag with Security Lock(Pink) &times; 2"
+            }
+          ],
+          "selected": true,
+          "currency_code": "INR",
+          "currency_symbol": "\u20b9",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "\u20b9",
+          "currency_suffix": ""
+        }
+      ]
+    }
+  ],
+  "items_count": 2,
+  "items_weight": 0,
+  "cross_sells": [],
+  "errors": [],
+  "payment_methods": ["razorpay", "ccavenue", "wallet", "cod"],
+  "extensions": {}
+}

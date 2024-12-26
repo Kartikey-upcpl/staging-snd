@@ -1,0 +1,12 @@
+.block-wrapper h1,
+.block-wrapper h2,
+.block-wrapper h3,
+.block-wrapper h4,
+.block-wrapper h5,
+.block-wrapper h6,
+.block-wrapper .heading-font,
+.block-wrapper .banner h1,
+.block-wrapper .banner h2 {
+    font-weight: 500;
+    font-style: normal;
+}
