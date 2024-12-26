@@ -8,6 +8,7 @@ import { loginAction } from './actions';
 import Submit from "@/components/button/Submit";
 import { OtpModal } from "../ui/otpModal";
 import { GoogleLogin } from "@react-oauth/google";
+import GoogleLoginWrapper from "./GoogleLoginWrapper";
 
 function EyeIcon() {
     return (
@@ -167,7 +168,7 @@ export default function LoginForm() {
 
                     <OtpModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
                 </div>
-                <GoogleLogin onSuccess={handleLoginSuccess} onError={handleLoginError} />
+                <GoogleLoginWrapper onSuccess={handleLoginSuccess} onError={handleLoginError} />
 
             </div>
         </div>

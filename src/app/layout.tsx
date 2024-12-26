@@ -33,7 +33,7 @@ import { getCart, currentUser } from "@/lib/wordpress";
 import Settings from "@/components/app/Settings";
 import { cookies } from "next/headers";
 import { WEBSITE_TITLE, WEBSITE_DESCRIPTION } from "@/lib/constants";
-import { GoogleOAuthProvider } from "@react-oauth/google";
+import GoogleProvider from "@/components/account/GoogleOAuthProvider";
 
 
 // ============================== Apis ==============================
@@ -75,7 +75,7 @@ export default function RootLayout({
                 <style id="flatsome-main-inline-css" type="text/css" dangerouslySetInnerHTML={{ __html: flasomeStyle }} />
             </head>
             <body className={`${inter.className} ${solway.className}`}>
-                <GoogleOAuthProvider clientId="913284221746-t9v85l1pq1q2p484c9nmv3751ojnjqqe.apps.googleusercontent.com">
+                <GoogleProvider>
                     <Notifications>
                         <CartProvider cartPromise={cart} userPromise={user}>
                             <Svgs />
@@ -90,7 +90,7 @@ export default function RootLayout({
                             </div>
                         </CartProvider>
                     </Notifications>
-                </GoogleOAuthProvider>
+                </GoogleProvider>
                 <Settings />
             </body>
         </html>

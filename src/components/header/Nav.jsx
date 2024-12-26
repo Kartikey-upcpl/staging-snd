@@ -10,7 +10,7 @@ export default function Nav() {
     if (pathname === "/snd-vshop") {
         return null; // Do not render anything for this route
     }
-    const url = process.env.NEXT_PUBLIC_WORDPRESS_URL;
+    const url = "https://test.snd.in"
     const categories = [
         {
             href: "/",
