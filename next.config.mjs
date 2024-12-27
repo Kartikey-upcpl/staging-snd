@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
+  // Handle TypeScript errors during build
   typescript: {
-    // Ignore type errors during builds
     ignoreBuildErrors: true,
   },
+
+  // Allow loading external images
   images: {
     remotePatterns: [
       {
@@ -18,6 +21,24 @@ const nextConfig = {
         port: '',
       },
     ],
+  },
+
+  // Webpack Configuration to prevent EvalError
+  webpack: (config, { dev }) => {
+    if (dev) {
+      // Allow eval() in development for debugging
+      config.devtool = 'eval-source-map';
+    }
+
+    // Ensure module filenames are correctly mapped
+    config.output = {
+      ...config.output,
+      devtoolModuleFilenameTemplate: (info) => {
+        return `webpack:///${info.resourcePath.replace('./', '')}`;
+      },
+    };
+
+    return config;
   },
 };
 

@@ -1,20 +1,20 @@
 # Use Node.js as the base image
 FROM node:18
 
-# Set working directory
+# Set the working directory
 WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
+# Copy package.json and yarn.lock
+COPY package.json yarn.lock ./
 
-# Install dependencies ignoring peer dependency conflicts
-RUN npm install --legacy-peer-deps
+# Install dependencies using yarn
+RUN yarn install --ignore-engines --ignore-scripts
 
-# Copy the application code
+# Copy the rest of the code
 COPY . .
 
-# Expose port 3000
+# Expose the port
 EXPOSE 3000
 
-# Start the server
-CMD ["npm", "run", "dev"]
+# Start the application
+CMD ["yarn", "dev"]
