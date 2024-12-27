@@ -1,18 +1,20 @@
 # Use Node.js as the base image
 FROM node:18
 
-# Set the working directory inside the container
+# Set working directory
 WORKDIR /usr/src/app
 
-# Copy package.json and install dependencies
+# Copy package.json and package-lock.json
 COPY package*.json ./
-RUN npm install
+
+# Install dependencies ignoring peer dependency conflicts
+RUN npm install --legacy-peer-deps
 
 # Copy the application code
 COPY . .
 
-# Expose the port the app runs on
+# Expose port 3000
 EXPOSE 3000
 
-# Start the application
-CMD ["node", "server.js"]
+# Start the server
+CMD ["npm", "run", "dev"]
