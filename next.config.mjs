@@ -23,19 +23,19 @@ const nextConfig = {
     ],
   },
 
-  // Webpack Configuration to prevent EvalError
-  webpack: (config, { dev }) => {
-    if (dev) {
-      // Allow eval() in development for debugging
-      config.devtool = 'eval-source-map';
-    }
+  // Explicitly set Node.js runtime for compatibility
+  experimental: {
+    runtime: 'nodejs', // Use Node.js runtime instead of Edge
+  },
+
+  webpack: (config) => {
+    // Remove 'eval' and use 'source-map' for better compatibility
+    config.devtool = 'source-map'; // Safe for both dev and production
 
     // Ensure module filenames are correctly mapped
     config.output = {
       ...config.output,
-      devtoolModuleFilenameTemplate: (info) => {
-        return `webpack:///${info.resourcePath.replace('./', '')}`;
-      },
+      devtoolModuleFilenameTemplate: '[absolute-resource-path]',
     };
 
     return config;
