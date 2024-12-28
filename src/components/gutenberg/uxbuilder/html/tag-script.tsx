@@ -7,6 +7,15 @@ export function TagScript({ attributes, contentChild }: PropsTag) {
     const props = attributsToProps(attributes);
 
     return (
-        <Script {...props} dangerouslySetInnerHTML={{ __html: contentChild ?? "" }} />
+        <>
+            {
+                (
+                    <Script
+                        {...props}
+                        dangerouslySetInnerHTML={{ __html: contentChild ?? "" }}
+                    />
+                ) as React.ReactNode
+            }
+        </>
     );
 }
